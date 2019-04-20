@@ -1,0 +1,169 @@
+{
+"hapi-swaggered-ui": "^2.6.2",
+ "info":{
+     "title":"property_api",
+     "description":"CRRUD Api's",
+     "version": "1.0.0"
+ },
+ "host": "localhost:3000",
+ "basepath":"/Documentation",
+ "tags":[
+     {
+     "name": "property",
+      "description":"Api for property in the system"
+     }
+ ],
+ "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/propertyDetail": {
+      "post": {
+        "tags": [
+          "property"
+        ],
+        "description": "Create new property in system",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "New property is created"
+            
+          }
+        }
+      }
+  },
+  "/propertyDataList": {
+    "get":{
+      "tags":[
+        "property"
+      ],
+      "description" : "get a property list",
+      "produces":[
+        "application/json"
+      ],
+      "responses":{
+        "200":{
+          "description": "displayed all the property list"
+        }
+      }
+    }
+  },
+  "/propertyRecord/{id}": {
+    "get":{
+      "tags":[
+        "property"
+      ],
+      "description" : "get a single property",
+       "produces":[
+         "application/json"
+       ],
+       "responses" :{
+         "200":{
+           "description": "displayed a single data"
+         }
+       }
+      
+    }
+  },
+  "propertyRecordUpdate/{id}" : {
+    "put" : {
+      "tags" : [
+        "property"
+      ],
+      "description" : "update a single data",
+       "produces" : [
+         "application/json"
+       ],
+       "response" :{
+         "200" :{
+          "description": "update  a single data  using id"
+         }
+       }
+      
+    }
+  },
+  "propertyRecordDelete/{id}" : {
+    "Delete" : {
+      "tags" : [
+        "property"
+      ],
+      "description" : "delete a single data",
+      "produces" : [
+        "application/json"
+      ],
+      "response" :{
+        "200"  :{
+          "description": "delete a single data using id"
+        }
+      }
+      }
+    },
+    "definition":{
+       "county": {
+        "required": true,
+         "type": "String"
+    },
+     "pin": {
+      "required" : true,
+      "type ": "String"
+     },
+     "address": {
+       "type" : "String"
+     },
+     "city" : {
+      "type": "String"
+     },
+     "state": {
+       "type":"String"
+     },
+     "zip": {
+       "type" :"String"
+     },
+     "township" : {
+       "type" :"String"
+     },
+     "class_code" : {
+       "type" : "String"
+     },
+     "assessed_value" : {
+       "type" : "String"
+     },
+     "market_value" : {
+       "type" : "String"
+     },
+     "taxes_per_year": {
+       "type" : "String"
+     },
+     "PREEQEXM" : {
+       "type" : "String"
+     },
+     "home_owners" : {
+       "type" : "String"
+     },
+     "senior_freeze" : {
+       "type" :"String"
+     },
+     "total_acres" : {
+       "type" :"String"
+     },
+     "legal_description" : {
+       "type" :"String"
+     },
+     "google_map_view" : {
+       "type" : "String"
+     }
+
+    }
+  }
+  } 
+
+
+

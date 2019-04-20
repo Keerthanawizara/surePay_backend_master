@@ -1,0 +1,38 @@
+{
+  "name": "backend_data",
+  "version": "1.0.0",
+  "description": "Application to perform backend operations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv": "^5.1.1",
+    "csv-parser": "^2.2.0",
+    "dotenv": "^7.0.0",
+    "es6-promise": "^4.2.6",
+    "fs": "0.0.1-security",
+    "hapi": "^18.1.0",
+    "hapi-auth-bearer-token": "^6.1.1",
+    "hapi-swagger": "^9.4.2",
+    "hapi-swaggered": "^3.0.3",
+    "hapi-swaggered-ui": "^2.6.2",
+    "inert": "^5.1.3",
+    "joi": "^14.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.1.13",
+    "mongojs": "^2.6.0",
+    "mongoose": "^5.4.20",
+    "mongoose-paginate": "^5.0.3",
+    "nodemailer": "^6.1.0",
+    "uuid": "^3.3.2",
+    "vision": "^5.4.4",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
